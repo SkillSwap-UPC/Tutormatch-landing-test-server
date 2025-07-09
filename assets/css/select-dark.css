@@ -1,0 +1,33 @@
+/* Estilo personalizado para el select del formulario de contacto */
+.contact-form select {
+  background: #232136;
+  color: #fff;
+  border: 1.5px solid #5a4fcf;
+  border-radius: 8px;
+  padding: 0.75em 1em;
+  font-size: 1em;
+  outline: none;
+  transition: border 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px 0 rgba(30, 20, 60, 0.08);
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.contact-form select:focus {
+  border-color: #a78bfa;
+  box-shadow: 0 0 0 2px #a78bfa44;
+}
+
+.contact-form option {
+  background: #232136;
+  color: #fff;
+}
+
+/* Flecha personalizada para el select */
+.contact-form select {
+  background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' fill='white' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 6l4 4 4-4' stroke='%23a78bfa' stroke-width='2' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1em center;
+  background-size: 1.2em;
+}

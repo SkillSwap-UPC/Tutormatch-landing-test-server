@@ -1,0 +1,583 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="assets/images/logo/logoWhite.webp" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/select-dark.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>TutorMatch - Conectando Estudiantes y Tutores</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="header">
+        <a href="" class="logo">
+          <div class="logo-container">
+            <span class="logo-text">TutorMatch</span>
+          </div>
+        </a>
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+          <span class="material-symbols-outlined" id="menu-icon">menu</span>
+          <span class="material-symbols-outlined" id="close-icon">close</span>
+        </label>
+        <nav class="navbar">
+          <a href=" " style="--i:0;" class="nav-link" id="home">
+            <span class="nav-icon">🏠</span>
+            <span>Inicio</span>
+          </a>
+          <a href=" " style="--i:1;" class="nav-link" id="about">
+            <span class="nav-icon">👥</span>
+            <span>Acerca de nosotros</span>
+          </a>
+          <a href=" " style="--i:2;" class="nav-link" id="price">
+            <span class="nav-icon">💰</span>
+            <span>Precios</span>
+          </a>
+          <a href=" " style="--i:3;" class="nav-link" id="contact">
+            <span class="nav-icon">📞</span>
+            <span>Contacto</span>
+          </a>
+          <button class="btn-lang" id="lang-toggle">EN</button>
+          <a href="https://tutormatch-disxp.netlify.app/" class="btn-primary" id="INSCRIBIRME">
+            <span>INSCRIBIRME</span>
+            <span class="btn-arrow">→</span>
+          </a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+            <div class="floating-elements">
+                <div class="floating-element" style="--delay: 0s;">💻</div>
+                <div class="floating-element" style="--delay: 2s;">🎓</div>
+                <div class="floating-element" style="--delay: 4s;">📖</div>
+                <div class="floating-element" style="--delay: 6s;">🚀</div>
+            </div>
+            
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span>✨ Plataforma #1 en Tutorías</span>
+                    </div>
+                    <h1 class="hero-title" id="titleBanner">
+                        <span class="title-highlight">Mejora</span> tus habilidades en 
+                        <span class="title-gradient">programación</span>
+                    </h1>
+                    <p class="hero-description" id="txtBanner">
+                        Contamos con destacados tutores que te enseñarán todo lo que necesitas para potenciar tus conocimientos y acelerar tu carrera profesional.
+                    </p>
+                    
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">1000+</div>
+                            <div class="stat-label">Estudiantes</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">200+</div>
+                            <div class="stat-label">Tutores</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">98%</div>
+                            <div class="stat-label">Satisfacción</div>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-buttons">
+                        <a href="https://tutormatch-disxp.netlify.app/" class="btn-hero-primary">
+                            <span>🚀 INSCRIBIRME AHORA</span>
+                        </a>
+                        <button class="btn-hero-secondary" onclick="document.querySelector('#videoSection').scrollIntoView({behavior: 'smooth'})">
+                            <span>▶️ Ver Demo</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="hero-visual">
+                    <div class="hero-card-container">
+                        <div class="hero-card floating">
+                            <div class="card-header">
+                                <div class="avatar">👨‍💻</div>
+                                <div class="card-info">
+                                    <h4>Juan Carlos</h4>
+                                    <p>Fundamentos de Ingeniería de Software</p>
+                                </div>
+                                <div class="rating">⭐ 4.9</div>
+                            </div>
+                            <div class="card-content">
+                                <div class="skill-tags">
+                                    <span class="tag">7mo ciclo</span>
+                                    <span class="tag">Docker</span>
+                                    <span class="tag">Microservicios</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="hero-card floating" style="--delay: 0.5s;">
+                            <div class="card-header">
+                                <div class="avatar">👩‍💻</div>
+                                <div class="card-info">
+                                    <h4>María López</h4>
+                                    <p>Desarrollo de Aplicaciones IoT</p>
+                                </div>
+                                <div class="rating">⭐ 5.0</div>
+                            </div>
+                            <div class="card-content">
+                                <div class="skill-tags">
+                                    <span class="tag">7mo ciclo</span>
+                                    <span class="tag">Edge API</span>
+                                    <span class="tag">ESP32</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pricing Banner -->
+        <div class="pricing-preview">
+            <div class="pricing-container">
+                <div class="pricing-header">
+                    <h3>Membresías Especiales</h3>
+                    <p>Para Tutores Destacados</p>
+                </div>
+                
+                <div class="pricing-cards">
+                    <div class="pricing-card basic">
+                        <div class="card-icon">🌟</div>
+                        <h4>Plan Básico</h4>
+                        <div class="price">
+                            <span class="currency">S/. </span>
+                            <span class="amount">5.00</span>
+                        </div>
+                        <a href="#" class="price-cta" id="basic">
+                            <span>Ver detalles</span>
+                            <span class="arrow">→</span>
+                        </a>
+                    </div>
+                    
+                    <div class="pricing-card standard featured">
+                        <div class="featured-badge">Más Popular</div>
+                        <div class="card-icon">🚀</div>
+                        <h4>Plan Estándar</h4>
+                        <div class="price">
+                            <span class="currency">S/. </span>
+                            <span class="amount">10.00</span>
+                        </div>
+                        <a href="#" class="price-cta" id="standard">
+                            <span>Ver detalles</span>
+                            <span class="arrow">→</span>
+                        </a>
+                    </div>
+                    
+                    <div class="pricing-card premium">
+                        <div class="card-icon">💎</div>
+                        <h4>Plan Premium</h4>
+                        <div class="price">
+                            <span class="currency">S/. </span>
+                            <span class="amount">15.00</span>
+                        </div>
+                        <a href="#" class="price-cta" id="premium">
+                            <span>Ver detalles</span>
+                            <span class="arrow">→</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section id="videoSection" class="video-section">
+        <div class="section-header">
+            <h2 class="section-title" id="discover">
+                <span class="title-emoji">🎬</span>
+                Descubre TutorMatch
+            </h2>
+            <p class="section-description">Conoce cómo nuestra plataforma está revolucionando la educación</p>
+        </div>
+        
+        <div class="video-container">
+            <div class="video-wrapper">
+                <iframe 
+                  src="https://www.youtube.com/embed/eDrO6c2mowo?si=TfkLv1xp2kW8uOnQ" 
+                  title="Video About the Product" 
+                  frameborder="0" 
+                  allow="autoplay; encrypted-media" 
+                  allowfullscreen>
+                </iframe>
+                <div class="video-overlay">
+                    <button class="play-button">▶️</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="about-container">
+            <!-- Mission Statement -->
+            <div class="about-intro">
+                <div class="about-content">
+                    <div class="section-badge">📱 Nuestra Plataforma</div>
+                    <h2 class="about-title">Conectando el futuro de la educación</h2>
+                    <p class="about-description">
+                        Una plataforma innovadora que permite a los estudiantes encontrar tutores especializados que puedan ayudarlos en cursos específicos de su carrera, organizados por ciclo y especialidad. TutorMatch facilita la conexión entre estudiantes, optimizando el proceso de aprendizaje y ayudando a mejorar el rendimiento académico en materias clave.
+                    </p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <span class="feature-icon">🎯</span>
+                            <span>Tutores especializados por materia</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">⚡</span>
+                            <span>Conexión instantánea</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">📊</span>
+                            <span>Seguimiento del progreso</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="phone-mockup">
+                        <div class="phone-content">
+                            <div class="app-interface">
+                                <div class="app-header">
+                                    <div class="app-title">TutorMatch</div>
+                                    <div class="notification-badge">3</div>
+                                </div>
+                                <div class="tutor-list">
+                                    <div class="tutor-item">
+                                        <div class="tutor-avatar">👨‍🏫</div>
+                                        <div class="tutor-info">
+                                            <div class="tutor-name">Prof. García</div>
+                                            <div class="tutor-subject">Algoritmos</div>
+                                        </div>
+                                        <div class="status online">●</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Target Audiences -->
+            <div class="audiences">
+                <div class="audience-card">
+                    <div class="audience-visual">
+                        <div class="student-illustration struggling">
+                            <div class="student-icon">😰</div>
+                            <div class="books">📚📝</div>
+                        </div>
+                    </div>
+                    <div class="audience-content">
+                        <h3>
+                            <span class="highlight-white">Estudiantes con </span>
+                            <span class="highlight-dark">dificultades académicas</span>
+                        </h3>
+                        <p>
+                            Este segmento abarca a estudiantes de Ingeniería de Software de la UPC que enfrentan dificultades en cursos específicos y buscan apoyo adicional para mejorar su comprensión y rendimiento académico. Estos estudiantes pueden tener diversas necesidades, como refuerzos en conceptos técnicos, orientación en proyectos o preparación para exámenes.
+                        </p>
+                        <div class="benefits">
+                            <div class="benefit">✅ Apoyo personalizado</div>
+                            <div class="benefit">✅ Horarios flexibles</div>
+                            <div class="benefit">✅ Mejora garantizada</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="audience-card reverse">
+                    <div class="audience-content">
+                        <h3>
+                            <span class="highlight-white">Estudiantes con </span>
+                            <span class="highlight-dark">habilidades destacadas</span>
+                        </h3>
+                        <p>
+                            Son estudiantes con un dominio sólido en ciertas áreas de la Ingeniería de Software que desean compartir sus conocimientos con otros estudiantes a través de tutorías. TutorMatch les ofrece la oportunidad de obtener experiencia docente, mejorar su currículum y, en algunos casos, generar ingresos.
+                        </p>
+                        <div class="benefits">
+                            <div class="benefit">🎓 Experiencia docente</div>
+                            <div class="benefit">💰 Ingresos extra</div>
+                            <div class="benefit">🚀 Crecimiento profesional</div>
+                        </div>
+                    </div>
+                    <div class="audience-visual">
+                        <div class="student-illustration successful">
+                            <div class="student-icon">😎</div>
+                            <div class="achievements">🏆⭐</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Team Video -->
+        <div class="team-video">
+            <div class="video-header">
+                <h3 id="about-title">
+                    <span class="title-emoji">👥</span>
+                    Conoce a Nuestro Equipo
+                </h3>
+                <p>Descubre la pasión y dedicación detrás de TutorMatch</p>
+            </div>
+            <div class="video-wrapper large">
+                <iframe 
+                  src="https://www.youtube.com/embed/xeEwiMTxNyc" 
+                  title="Video About the Team" 
+                  frameborder="0" 
+                  allow="autoplay; encrypted-media" 
+                  allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Membership Details Section -->
+    <section class="membership">
+        <div class="membership-header">
+            <div class="section-badge">💎 Planes Premium</div>
+            <h2>Membresías para Tutores</h2>
+            <p>Elige el plan que mejor se adapte a tus necesidades como tutor</p>
+        </div>
+        
+        <div class="membership-grid">
+            <div class="membership-card basic">
+                <div class="card-header">
+                    <div class="plan-icon">🌟</div>
+                    <h3>Plan Básico</h3>
+                    <div class="plan-price">
+                        <span class="currency">S/. </span>
+                        <span class="amount">5.00</span>
+                    </div>
+                </div>
+                <div class="card-features">
+                    <div class="feature-item">
+                        <span class="check">✅</span>
+                        <span>Acceso a estudiantes interesados</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="check">✅</span>
+                        <span>Historial de tutorías</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="check">✅</span>
+                        <span>Soporte con respuesta en 48 horas</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="membership-card standard featured">
+                <div class="popular-badge">Más Popular</div>
+                <div class="card-header">
+                    <div class="plan-icon">🚀</div>
+                    <h3>Plan Estándar</h3>
+                    <div class="plan-price">
+                        <span class="currency">S/. </span>
+                        <span class="amount">10.00</span>
+                    </div>
+                </div>
+                <div class="card-features">
+                    <div class="feature-item">
+                        <span class="check">✅</span>
+                        <span>Todo en el plan básico</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="check">✅</span>
+                        <span>Recomendaciones personalizadas</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="check">✅</span>
+                        <span>Visibilidad mejorada en búsquedas</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="check">✅</span>
+                        <span>Soporte con respuesta en 24 horas</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="check">✅</span>
+                        <span>Herramientas de gestión avanzadas</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="check">✅</span>
+                        <span>Calendarios y recordatorios automáticos</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="membership-card premium">
+                <div class="card-header">
+                    <div class="plan-icon">💎</div>
+                    <h3>Plan Premium</h3>
+                    <div class="plan-price">
+                        <span class="currency">S/. </span>
+                        <span class="amount">15.00</span>
+                    </div>
+                </div>
+                <div class="card-features">
+                    <div class="feature-item">
+                        <span class="check">✅</span>
+                        <span>Todo en el plan estándar</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="check">✅</span>
+                        <span>Perfil destacado con mayor exposición</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="check">✅</span>
+                        <span>Estadísticas avanzadas de rendimiento</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="check">✅</span>
+                        <span>Promociones y descuentos en anuncios</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="check">✅</span>
+                        <span>Soporte prioritario (12 horas)</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="check">✅</span>
+                        <span>Eventos exclusivos y networking</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="contact-container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="section-badge">📞 Contacto</div>
+                    <h2 class="contact-title">¿Tienes alguna pregunta?</h2>
+                    <p class="contact-description">
+                        Nos encantaría escucharte. Envíanos un mensaje y te responderemos lo antes posible.
+                    </p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">📧</div>
+                            <div class="method-info">
+                                <h4>Email</h4>
+                                <p>hello@tutormatch.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="method-icon">💬</div>
+                            <div class="method-info">
+                                <h4>Chat en vivo</h4>
+                                <p>Disponible 24/7</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="method-icon">🕐</div>
+                            <div class="method-info">
+                                <h4>Tiempo de respuesta</h4>
+                                <p>Menos de 2 horas</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nombre completo</label>
+                            <input type="text" id="name" placeholder="Tu nombre" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Correo electrónico</label>
+                            <input type="email" id="email" placeholder="tu@email.com" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Asunto</label>
+                            <select id="subject" required>
+                                <option value="">Selecciona un tema</option>
+                                <option value="general">Consulta general</option>
+                                <option value="tutor">Quiero ser tutor</option>
+                                <option value="student">Necesito un tutor</option>
+                                <option value="technical">Soporte técnico</option>
+                                <option value="billing">Facturación</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" placeholder="Cuéntanos cómo podemos ayudarte..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="form-submit">
+                            <span>Enviar mensaje</span>
+                            <span class="submit-arrow">→</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-text">TutorMatch</span>
+                    </div>
+                    <p class="footer-description">
+                        Conectando estudiantes con los mejores tutores para acelerar su crecimiento académico y profesional.
+                    </p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Plataforma</h4>
+                        <a href="#">Para Estudiantes</a>
+                        <a href="#">Para Tutores</a>
+                        <a href="#">Cómo funciona</a>
+                        <a href="#">Precios</a>
+                    </div>
+                    
+                    <div class="link-group">
+                        <h4>Soporte</h4>
+                        <a href="#">Centro de ayuda</a>
+                        <a href="#">Contacto</a>
+                        <a href="#">Estado del servicio</a>
+                        <a href="#">Reportar problema</a>
+                    </div>
+                    
+                    <div class="link-group">
+                        <h4>Legal</h4>
+                        <a href="#">Términos de uso</a>
+                        <a href="#">Política de privacidad</a>
+                        <a href="#">Cookies</a>
+                        <a href="#">Derechos de autor</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-copy">
+                    <p>&copy; 2025 TutorMatch - SkillSwap Inc. Todos los derechos reservados.</p>
+                </div>
+                <div class="footer-badges">
+                    <span class="badge">🛡️ Seguro</span>
+                    <span class="badge">✅ Verificado</span>
+                    <span class="badge">🏆 #1 en Tutorías</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
